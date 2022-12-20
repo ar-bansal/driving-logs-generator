@@ -3,7 +3,8 @@ This is the code base to generate cost (time and distance) to travel from an ori
 
 This project uses Google Maps API to predict the cost of driving from the origin to the destination via waypoints. 
 
-Features:
+
+## Features:
 1. Predict cost by giving input as:
     origin, waypoints and destination addresses -> input/addresses.csv
     date, onward start time, stops and return start time -> input/timings.csv
@@ -12,7 +13,7 @@ Features:
 4. Generate and save logs about app runs in the "log/" directory (Create the directory if not found).
 
 
-Building the distributable file:
+## Building the distributable file:
 1. Navigate to the directory containing the cli.py file.
 2. Run the following command: 
     `pyinstaller cli.py -r requirements.txt --hidden-import=googlemaps --onefile --name=DrivingLogGenerator`
@@ -20,7 +21,7 @@ Building the distributable file:
     `pyinstaller DrivingLogGenerator_linux.spec`
     
 
-Usage:
+## Usage:
 1. Linux:
     1. Give permissions to run the executable file: chmod a+x DrivingLogGenerator_linux
     2. Run the file using the terminal: ./DrivingLogGenerator
